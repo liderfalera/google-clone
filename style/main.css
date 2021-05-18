@@ -29,11 +29,11 @@ a {
 .main-nav {
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
+  height: 60px;
 }
 
 .main-nav__list {
-  width: 250px;
+  width: 350px;
   height: auto;
   display: flex;
   list-style: none;
@@ -44,7 +44,10 @@ a {
 .main-nav__link {
   margin-right: 1rem;
   color: var(--black-color);
+  margin-left: 5px;
 }
+
+
 
 .main-nav__icon .main-nav__link {
   background-image: url("https://static.thenounproject.com/png/756729-200.png");
@@ -58,9 +61,39 @@ a {
   margin-left: 1rem;
 }
 
-.main-nav__link img {
-  border-radius: 50%;
-  margin-left: 1rem;
+.main-nav__item.login {
+  margin: 0px 15px 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  align-content: center;
+}
+
+.main-nav__item button {
+  width: 130px;
+  height: 37px;
+  background-color: #1A73E8;
+  border: 1px solid #f8f9fa;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 5px;
+}
+
+.main-nav__item button:hover {
+  cursor: pointer;
+  background: #2b7de9;
+
+}
+
+
+.main-nav__item .gmail:hover,
+.main-nav__item .images:hover {
+  text-decoration: underline;
+}
+
+.main-nav__icon {
+  opacity: 0.65;
 }
 
 /*======== MAIN CONTENT - BIG LOGO=========*/
@@ -130,7 +163,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 15px;
+  height: 19px;
   width: 9%;
   cursor: pointer;
 }
@@ -164,7 +197,6 @@ a {
   color: #202124;
 }
 
-
 /*====FOOTER====*/
 
 .footer {
@@ -174,7 +206,7 @@ a {
   position: absolute;
   bottom: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 0.7fr;
   align-items: center;
   font-size: 1.4rem;
   background-color: #f2f2f2;
@@ -183,30 +215,25 @@ a {
   padding-right: 10px;
 }
 
-.footer ul{
+.footer ul {
   margin: 10px;
   list-style: none;
   text-decoration: none;
   display: flex;
-
 }
 
-.footer--left{
+.footer--left {
   justify-self: left;
 }
 
-.footer--right{
+.footer--right {
   justify-self: right;
 }
-.footer ul li a{
-  
+.footer ul li a {
   margin: 10px;
-  color: #70757a
+  color: #70757a;
 }
 
-.footer ul li a:hover{
+.footer ul li a:hover {
   text-decoration: underline;
 }
-
-
-
