@@ -1,179 +1,165 @@
-
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-size:62.5%;  
+html {
+  font-size: 62.5%;
 }
 
 /*======== VARIABLES=========*/
-:root{
-    --nomal-size-font: 1.3rem;   
-    --black-color:rgba(0,0,0,0.87);
+:root {
+  --nomal-size-font: 1.3rem;
+  --black-color: rgba(0, 0, 0, 0.87);
 }
 
-body{
-    font-size: var(--nomal-size-font);
-    font-family: arial, sans-serif;
+body {
+  font-size: var(--nomal-size-font);
+  font-family: arial, sans-serif;
 }
 
 /*======== NAVBAR-HEADER =========*/
 
-a{
-    text-decoration: none;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.main-nav{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
 }
 
-.main-nav__list{
-    width: 250px;
-    height: auto;
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    align-items: center;
-    
+.main-nav__list {
+  width: 250px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.main-nav__link{
-    margin-right: 1rem;
-    color: var(--black-color);
+.main-nav__link {
+  margin-right: 1rem;
+  color: var(--black-color);
 }
 
-
-.main-nav__icon  .main-nav__link{
-    background-image: url('https://static.thenounproject.com/png/756729-200.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
-    width: 25px;
-    height: 25px;
-    padding: 1.2rem;
-    width: 100%;
-    margin-left: 1rem;
+.main-nav__icon .main-nav__link {
+  background-image: url("https://static.thenounproject.com/png/756729-200.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  padding: 1.2rem;
+  width: 100%;
+  margin-left: 1rem;
 }
 
-.main-nav__link img{
-    border-radius: 50%;
-    margin-left:1rem;
+.main-nav__link img {
+  border-radius: 50%;
+  margin-left: 1rem;
 }
-
 
 /*======== MAIN CONTENT - BIG LOGO=========*/
 
-.main-logo{
-    display: flex;
-    height: 31vh;
-    justify-content: center;
-    align-items: flex-end;
-
+.main-logo {
+  display: flex;
+  height: 31vh;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.main-logo__img{
-    width: 272px;
-    height: 92px;
-    flex-direction: column;
-    justify-content: flex-end;
-    
+.main-logo__img {
+  width: 272px;
+  height: 92px;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .main-logo__img img {
-    width: 100%;
-
+  width: 100%;
 }
-
 
 /*======== MAIN CONTENT - INPUT=========*/
-.main-input__container{
-    display: flex;
-    align-items: center;
-    width: 100%;
+.main-input__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-
 /*--Input--*/
-.main-input{
-    width: 600px;
-    margin:0 auto;
-    margin-top: 26px;
-    display: flex;
-    justify-content: center;
-    border-radius: 100px;
-    border:1px solid #dfe1e5 ; 
-
+.main-input {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+  border: 1px solid #dfe1e5;
 }
 
 .main-input input {
-    width:  82%;
-    height: 44px;
-    border: none;
-    outline: none;
-
+  width: 82%;
+  height: 44px;
+  border: none;
+  outline: none;
 }
 
 .main-input:hover {
-box-shadow: 0 1px 6px 0 #20212447;
-border-color: #20212500;
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #20212500;
 }
 
 /*--Search Icon--*/
-.main-input__search-icon{
-    background-image: url('https://img.icons8.com/android/24/000000/search.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 15px;
-    opacity: .45;
-    width:  9%;
+.main-input__search-icon {
+  background-image: url("https://img.icons8.com/android/24/000000/search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 15px;
+  opacity: 0.45;
+  width: 9%;
 }
 /*--Micro Icon--*/
 
-.main_input__micro-icon{
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 15px;
-    width:  9%;
-    cursor: pointer;
+.main_input__micro-icon {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 15px;
+  width: 9%;
+  cursor: pointer;
 }
-
-
 
 /*Buttons*/
 
-.main-buttons__container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;    
+.main-buttons__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 .main-buttons__container button {
-    height: 36px;
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    font-size: 1.4rem;
-    color: #3c4043;
-    border-radius: 5px;
-    padding: 0 15px;
-    margin:29px 4px ;
-    
+  height: 36px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  font-size: 1.4rem;
+  color: #3c4043;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 29px 4px;
 }
 
 .main-buttons__container button:hover {
-    cursor: pointer;
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
