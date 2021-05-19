@@ -17,7 +17,7 @@ html {
 body {
   font-size: var(--nomal-size-font);
   font-family: arial, sans-serif;
-  min-width: 400px;
+  min-width: 330px;
 }
 
 /*======== NAVBAR-HEADER =========*/
@@ -34,7 +34,7 @@ a {
 }
 
 .main-nav__list {
-  width: 350px;
+  width: 300px;
   height: auto;
   display: flex;
   list-style: none;
@@ -147,7 +147,7 @@ a {
 .main-input__search-icon {
   background-image: url("https://img.icons8.com/android/24/000000/search.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: contain;
   height: 15px;
   opacity: 0.45;
@@ -158,7 +158,7 @@ a {
 .main_input__micro-icon {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: contain;
   height: 19px;
   width: 9%;
@@ -206,20 +206,18 @@ a {
   font-size: 1.4rem;
   background-color: #f2f2f2;
   border-top: 1px solid #e4e4e4;
-  padding-left: 10px;
-  padding-right: 10px;
-  min-width: 400px;
+  min-width: 330px;
 }
 
 .footer2 a {
   display: flex;
   align-items: center;
-  margin: 15px;
+  margin: 15px 0;
   color: #70757a;
-
+  justify-content: center;
 }
 
-.footer2 a:hover{
+.footer2 a:hover {
   text-decoration: underline;
 }
 
@@ -235,9 +233,10 @@ a {
 .footer2--left .one,
 .footer2--left .two,
 .footer2--left .three {
-  width: 33.3%;
+  width: auto;
   display: flex;
   justify-content: center;
+  margin: 0 2%;
 }
 
 .footer2--left .four {
@@ -256,75 +255,108 @@ a {
 .footer2--right .one,
 .footer2--right .two,
 .footer2--right .three {
-  width: 33.3%;
+  width: auto;
   display: flex;
   justify-content: center;
+  margin: 0 2%;
 }
 
+
+
+
 /*========MEDIA QUERIES===========*/
-@media (min-width: 750px) {
+
+
+@media (min-width: 600px) {
   .main-input {
-    width: 600px;
+    width: 560px;
   }
+
+  .main-input__search-icon {
+    background-position: center;
+  }
+  
+  .main_input__micro-icon {
+    background-position: center;    
+  }
+
+
 
   .footer2--left {
     width: 100%;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
   .footer2--left .one,
   .footer2--left .two,
   .footer2--left .three {
-    width: 23%;
+    width: auto;
     display: flex;
     justify-content: center;
+    margin: 0 2%;
   }
 
   .footer2--left .four {
-    width: 31%;
+    width: auto;
     display: flex;
     justify-content: center;
-    
+    margin: 0 2%;
+  }
+
+  .footer2--right .one,
+  .footer2--right .two,
+  .footer2--right .three {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 2%;
   }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 800px) {
+
+  .main-input {
+    width: 600px;
+  }
+
   .footer2 {
     width: 100%;
     flex-wrap: nowrap;
   }
 
-  
-  .footer2--left .one{
-    width: 25%;
+  .footer2--left {
+    width: 65%;
+    justify-content: flex-start;
   }
 
-
+  .footer2--left .one,
   .footer2--left .two,
   .footer2--left .three {
-    width: 17%;
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 2%;
+    margin-right: 3%;
   }
 
   .footer2--left .four {
-    width: 41%;
-    display: flex;
-    justify-content: center;
-    margin-right: 5%;
-  }
-
-
-  .footer2--left{
-    width: 65%;
-    margin-right: 5%;
-  }
-
-  .footer2--right{
     width: 35%;
-    
-    margin-left: 5%;
-    
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
+  }
+
+  .footer2--right {
+    width: 35%;
+    justify-content: flex-end;
+  }
+  .footer2--right .one,
+  .footer2--right .two,
+  .footer2--right .three {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.3rem;
   }
 }
-
