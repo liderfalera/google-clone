@@ -1,6 +1,6 @@
 # GOOGLE CLONE | [View demo👁](https://liderfalera.github.io/google-clone/)
 
-[![Socialpreview](https://i.imgur.com/iaADTOv.png)](#)
+[![Socialpreview](https://i.imgur.com/iaADTOv.png)](https://liderfalera.github.io/google-clone/)
 
 ## Description
 
