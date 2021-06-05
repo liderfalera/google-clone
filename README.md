@@ -4,7 +4,7 @@
 
 ## Description
 
-Cloning the "GOOGLE SEARCH" page visually
+Cloning the ["GOOGLE SEARCH"](https://www.google.com/) page visually
 
 - Responsive layout | Media queries
 - Semantic HTML
