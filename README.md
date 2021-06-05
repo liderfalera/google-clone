@@ -1,3 +1,5 @@
-# google-clone
-Cloning the Google search page
-By Lider Falera
+# GOOGLE CLONE | [View demo👁](https://liderfalera.github.io/google-clone/)
+
+![Socialpreview](https://i.imgur.com/iaADTOv.png)
+
+## By Falera L.
