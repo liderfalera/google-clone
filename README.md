@@ -2,4 +2,14 @@
 
 ![Socialpreview](https://i.imgur.com/iaADTOv.png)
 
-## By Falera L.
+## Description
+
+Cloning the "GOOGLE SEARCH" page visually
+
+- Responsive layout | Media queries
+- Semantic HTML
+- CSS | Good practices
+- CSS | Variables
+- BEM metodology on css
+***
+### By Falera L.
